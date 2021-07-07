@@ -3,7 +3,9 @@ var stick_image, ninja_image;
 var boundary1, boundary2, boundary3, boundary4;
 var wall1, wall2, wall3, wall4, wall5;
 var wall6, wall7, wall8, wall9, wall10;
-var wall11, wall12;
+var wall11, wall12, wall13, wall14, wall15;
+var wall20, wall21, wall22, wall23;
+var wall24, wall25, wall26, wall27;
 
 function preload() {
 	stick_image = loadImage("images/stick.png");
@@ -41,11 +43,41 @@ function setup() {
 	wall6 = createSprite(192, 260, 5, 150);
 	wall7 = createSprite(148, 333, 91, 5);
 	wall8 = createSprite(100, 370, 5, 170);
-	wall9 = createSprite(242, 289, 5, 190);
-	wall10 = createSprite(194, 382, 100, 5);
-	wall11 = createSprite(146, 400, 5, 40);
+	wall9 = createSprite(150, 395, 5, 35);
+	wall9.shapeColor = "hotpink"
+	wall10 = createSprite(190, 395, 75, 5);
+	wall10.shapeColor = "violet"
 
-	wall12 = createSprite(194, 450, 100, 5);
+	wall11 = createSprite(277, 405, 5, 100);
+	wall11.shapeColor = "brown";
+	wall12 = createSprite(415, 450, 165, 5);
+	wall12.shapeColor = "orange";
+
+	wall27 = createSprite(337, 405, 5, 100);
+
+	wall13 = createSprite(498, 377, 5, 150);
+	wall13.shapeColor = "indigo";
+	wall14 = createSprite(450, 304, 100, 5);
+	wall14.shapeColor = "lightblue";
+	wall15 = createSprite(188, 453, 180, 5);
+	wall15.shapeColor = "maroon";
+
+	wall20=createSprite(430, 100, 140, 5); 
+	wall20.shapeColor="red"; 
+	wall21=createSprite(498, 173, 5, 150); 
+	wall21.shapeColor="blue"; 
+	wall22 = createSprite(430, 150, 140, 5); 
+	wall22.shapeColor = "yellow"; 
+	wall23 = createSprite(455, 175, 5, 50); 
+	wall23.shapeColor="green";
+
+	wall26 = createSprite(410, 175, 5, 50);
+	wall26.shapeColor = "purple";
+
+	wall24=createSprite(300,105,5,110); 
+	wall24.shapeColor="green"; 
+	wall25=createSprite(450, 246, 100, 5); 
+	wall25.shapeColor="black";
 
 	
 }
@@ -89,6 +121,11 @@ function draw() {
 	stick.collide(wall10);
 	
 	stick.collide(wall11);
+	stick.collide(wall12);
+	stick.collide(wall13);
+	stick.collide(wall14);
+	stick.collide(wall15);
+
 
 	//end collide code
 
